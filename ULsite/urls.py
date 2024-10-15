@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("RDS/", include('RDS.urls')),
     path('common/', include('common.urls')),
+    path('Power/', include('Power.urls')),
     path('', views.index, name='index'),  # '/' 에 해당되는 path
 ]

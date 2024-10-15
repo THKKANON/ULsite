@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Power.apps.PowerConfig',
     'common.apps.CommonConfig',
     'RDS.apps.RdsConfig',
     'django.contrib.admin',

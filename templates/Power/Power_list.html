@@ -22,11 +22,11 @@
         {% endfor %}
         {% else %}
         <tr>
-            <td colspan="3">Band가 없습니다.</td>
+            <td colspan="3">Power Band가 없습니다.</td>
         </tr>
         {% endif %}
         </tbody>
     </table>
-    <a href="{% url 'RDS:question_create' %}" class="btn btn-primary">Band 등록하기</a>
+    <a href="{% url 'Power:Band_create' %}" class="btn btn-primary">Power Band 등록하기</a>
 </div>
 {% endblock %}
