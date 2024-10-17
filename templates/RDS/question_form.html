@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container">
-    <h5 class="my-3 border-bottom pb-2">질문등록</h5>
+    <h5 class="my-3 border-bottom pb-2">Band 등록</h5>
     <form method="post">
         {% csrf_token %}
         <!-- 오류표시 Start -->
@@ -19,9 +19,24 @@
         {% endif %}
         <!-- 오류표시 End -->
         <div class="mb-3">
-            <label for="subject" class="form-label">제목</label>
+            <label for="subject" class="form-label">Band</label>
             <input type="text" class="form-control" name="subject" id="subject"
                    value="{{ form.subject.value|default_if_none:'' }}">
+            <label for="exposure" class="form-label">Exposure</label>
+            <input type="text" class="form-control" name="exposure" id="exposure"
+                    value="{{ form.exposure.value|default_if_none:'' }}">
+            <label for="mode" class="form-label">Mode</label>
+            <input type="text" class="form-control" name="mode" id="exposure"
+                    value="{{ form.mode.value|default_if_none:'' }}">
+            <label for="state" class="form-label">Power Mode</label>
+            <input type="text" class="form-control" name="state" id="exposure"
+                    value="{{ form.state.value|default_if_none:'' }}">
+            <label for="dist" class="form-label">Distance</label>
+            <input type="text" class="form-control" name="dist" id="exposure"
+                    value="{{ form.dist.value|default_if_none:'' }}">
+            <label for="position" class="form-label">Position</label>
+            <input type="text" class="form-control" name="position" id="exposure"
+                    value="{{ form.position.value|default_if_none:'' }}">
         </div>
         <div class="mb-3">
             <label for="content" class="form-label">내용</label>

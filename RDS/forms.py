@@ -4,9 +4,14 @@ from RDS.models import Question, Answer
 class QuestionForm(forms.ModelForm):
     class Meta:
         model = Question
-        fields = ['subject', 'content']
+        fields = ['subject', 'exposure', 'mode', 'state', 'dist', 'position', 'content']
         labels = {
-            'subject': '제목',
+            'subject': 'Band',
+            'exposure': "exposure",
+            'mode' : 'mode',
+            'state' : 'state',
+            'dist' : 'dist',
+            'position' : 'position',
             'content': '내용',
         } 
 
